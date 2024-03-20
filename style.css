@@ -1,0 +1,172 @@
+/* Global Styles */
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Form Container */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Form Titles */
+.gafru {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.gafru1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Fields */
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: calc(100% - 22px); /* Adjust width to consider padding and border */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Error Messages */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* Submit Buttons */
+.submit,
+.login {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit {
+  background-color: #3498db;
+}
+
+.submit:hover {
+  background-color: #2980b9;
+}
+
+.login {
+  background-color: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+
+.login:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Additional Styling */
+/* Input Focus */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3498db; /* Change border color on focus */
+}
+
+/* Form Container Hover Effect */
+form:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Form Title Hover Effect */
+.gafru:hover,
+.gafru1:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+/* Error Message Animation */
+.error {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(3px); }
+}
+/* Submit Buttons */
+.submit,
+.login {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition for color change */
+}
+
+.submit {
+  background-color: #3498db;
+}
+
+.submit:hover {
+  background-color: #2980b9;
+}
+
+.login {
+  background-color: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+
+.login:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Additional Button Styles */
+.submit,
+.login {
+  text-transform: uppercase; /* Uppercase button text */
+  letter-spacing: 1px; /* Add spacing between letters */
+}
+
+.submit {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.login {
+  box-shadow: 0 4px 6px rgba(52, 152, 219, 0.1); /* Change shadow color */
+}
+
+/* Hover Effect for Buttons */
+.submit:hover,
+.login:hover {
+  transform: translateY(-2px); /* Move button up slightly on hover */
+}
+

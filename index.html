@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Contact Form -->
+  <h1>I'm Md Gafrujama Ansari</h1>
+  
+  <h2 class="gafru" style="display: o;">Contact Form</h2>
+  <form id="contactForm" onsubmit="return validateContactForm()">
+    <label class="fullName"for="fullName">Full Name:</label><br>
+    <input type="text" id="fullName" name="fullName"><br>
+    <span id="fullNameError" class="error"></span><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <span id="emailError" class="error"></span><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br>
+    <span id="messageError" class="error"></span><br>
+
+    <input class="submit" type="submit" value="Submit">
+  </form>
+
+  <!-- Login Form -->
+  <h2 class="gafru1">Login Form</h2>
+  <form id="loginForm" onsubmit="return validateLoginForm()">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <span id="usernameError" class="error"></span><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <span id="passwordError" class="error"></span><br>
+
+    <input  class="login"type="submit" value="Login">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
